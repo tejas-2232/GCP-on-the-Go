@@ -9,4 +9,19 @@ You can hoose from several popular languages, libraries, and frameworks to devel
 * The App Engine application is a top-level container
 * It includes the service, version, and instance resources that make up your app
 
-* Each App Engine application includes at least one service, the default service, which can hold many versions, depending on your app's billing statu
+* Each App Engine application includes at least one service, the default service, which can hold many versions, depending on your app's billing status
+
+* The diagram illustrates the hierarchy of an App Engine app running with multiple services. 
+* In this diagram,app has 2 services containing multiple versions, and 2 of those versions are actively running on multiple instances:
+
+<img src="https://cloud.google.com/static/appengine/docs/images/modules_hierarchy.svg">
+
+
+### Instances
+
+* The versions within your services run on one or more instances. 
+* By default, App Engine scales your app to match the load. 
+* Your apps will scale up the number of instances that are running to provide consistent performance, or scale down to minimize idle instances and reduces costs. 
+For more information about instances, see [How Instances are Managed](https://cloud.google.com/appengine/docs/standard/how-instances-are-managed)
+
+## App Engine standard environment
