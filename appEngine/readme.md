@@ -6,6 +6,11 @@ You can hoose from several popular languages, libraries, and frameworks to devel
 * It's made up of single application resource that consists of one or more services.
 * each service can use different runtimes to operate with different performance
 
+* provides buil in services and API's like:
+  * NoSQL datastores
+  * Memcache, load balancing, health checks, 
+  * application logging, and a user authentication API that’s common to most applications
+
 * The App Engine application is a top-level container
 * It includes the service, version, and instance resources that make up your app
 
@@ -24,4 +29,14 @@ You can hoose from several popular languages, libraries, and frameworks to devel
 * Your apps will scale up the number of instances that are running to provide consistent performance, or scale down to minimize idle instances and reduces costs. 
 For more information about instances, see [How Instances are Managed](https://cloud.google.com/appengine/docs/standard/how-instances-are-managed)
 
-## App Engine standard environment
+## App Engine environments
+## 2 types
+
+#### 1. Standard 
+
+* based on container instances running Google's infra.
+* Containers are preconfigured with a runtime from supported language's list and version
+* 
+ 
+ 
+#### 2. Flexible
