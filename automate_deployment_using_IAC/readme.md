@@ -22,3 +22,37 @@ resource "google_compute_network" "mynetwork" {
 
 * Define a firewall rule to allow HTTP, SSH, RDP, and ICMP traffic on mynetwork.
 
+
+
+4. Configure the VM instance:
+
+
+* Define the VM instances by creating a VM instance module. 
+* A module is a reusable configuration inside a folder. You can use this module for both VM instances
+
+5. Create mynetwork and its resources
+
+* To rewrite the Terraform configuration files to a canonical format and style, run the following command:
+
+> terraform fmt
+
+* To initialize Terraform, run the following command:
+
+> terraform init
+
+* To create an execution plan, run the following command:
+
+> terraform plan
+
+* Terraform determined that the following 4 resources need to be added:
+
+Name	Description
+mynetwork	VPC network
+mynetwork-allow-http-ssh-rdp-icmp	Firewall rule to allow HTTP, SSH, RDP and ICMP
+mynet-us-vm	VM instance in us-central1-c
+mynet-eu-vm	VM instance in "europe-west1-d"
+
+* To apply the desired changes, run the following command:
+
+> terraform apply
+
