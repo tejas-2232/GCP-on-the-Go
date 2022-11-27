@@ -38,3 +38,12 @@ It takes a few moments to provision and connect to the environment. When you are
 <img src="https://cdn.qwiklabs.com/hmMK0W41Txk%2B20bQyuDP9g60vCdBajIS%2B52iI2f4bYk%3D">
 
 
+#### You can list the active account name with this command:
+
+> gcloud auth list
+
+
+#### You can list the project ID with this command:
+
+> gcloud config list project
+
